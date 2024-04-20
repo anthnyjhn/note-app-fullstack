@@ -1,0 +1,21 @@
+.notePreviewContainer {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.5rem; 
+}
+
+.noteTitle {
+  font-weight: 800;
+  font-size: large;
+  margin: 0px;
+
+}
+
+.noteContentPreview {
+  color: #878688;
+  font-weight: 500;
+  margin: 0px;
+}
+
+

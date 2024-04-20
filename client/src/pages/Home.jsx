@@ -9,8 +9,12 @@ import "../assets/styles/home.css";
 function Home() {
   return (
     <>
-      <Header />
-      <NotePreview />
+      <div className="container">
+        <Header />
+        <NotePreview noteTitle = "Hello World" noteContent="This is a note hello"/>
+      </div>
+      <footer>
+      </footer>
     </>
   );
 }
