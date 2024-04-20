@@ -1,17 +1,20 @@
 import NoteHeader from "../components/NoteHeader";
+import '../assets/styles/Create.css'
 
 function Create() {
   return (
     <>
       <div className="container">
-        <NoteHeader />
+      <NoteHeader />
         <div className="input-container">
+        
           <form action="" method="post">
-            <input type="text" placeholder="Title" value="" />
+            
+            <input type="text" placeholder="Title" className="title-input"/>
             <textarea
               name=""
               id=""
-              placeholder="What's on your mind?"
+              placeholder="Write something..." className="content-input"
             ></textarea>
           </form>
         </div>

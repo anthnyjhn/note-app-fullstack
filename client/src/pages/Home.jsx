@@ -12,6 +12,8 @@ function Home() {
       <div className="container">
         <Header />
         <NotePreview />
+        <NotePreview />
+        <NotePreview />
       </div>
       <footer>
       </footer>

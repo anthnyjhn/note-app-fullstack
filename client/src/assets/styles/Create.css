@@ -1,0 +1,29 @@
+input,
+textarea {
+  border: 0px;
+  font-family: sans-serif;
+  background-color: transparent;
+}
+
+.input-container {
+  margin-top: 1rem;
+}
+
+.title-input {
+  width: 90%;
+  height: 2rem;
+  font-weight: 700;
+  font-size: larger;
+}
+
+textarea {
+  width: 90%;
+  height: 80vh;
+  font-size: medium;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}

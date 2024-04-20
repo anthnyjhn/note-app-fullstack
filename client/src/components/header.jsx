@@ -5,7 +5,7 @@ function Header() {
     <>
       <header>
         <h1>Notes</h1>
-        <a href="/">Create</a> 
+        <a href="/create">Create</a> 
       </header>
     </>
   );
