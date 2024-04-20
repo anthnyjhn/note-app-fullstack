@@ -4,8 +4,8 @@ function NoteHeader() {
   return (
     <>
       <header>
-        <button>Back</button> 
-        <button>Save</button>
+        <a href="/"><p>Back</p></a> 
+        <form action="" method="post"><button>Save</button></form>
       </header>
     </>
   );

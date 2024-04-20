@@ -11,7 +11,7 @@ function Home() {
     <>
       <div className="container">
         <Header />
-        <NotePreview noteTitle = "Hello World" noteContent="This is a note hello"/>
+        <NotePreview />
       </div>
       <footer>
       </footer>

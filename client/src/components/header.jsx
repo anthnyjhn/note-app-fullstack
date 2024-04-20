@@ -5,7 +5,7 @@ function Header() {
     <>
       <header>
         <h1>Notes</h1>
-        <button>Create</button>
+        <a href="/">Create</a> 
       </header>
     </>
   );
