@@ -1,4 +1,4 @@
-import '../assets/styles/Header.css'
+import "../assets/styles/Header.css";
 
 function Header() {
   return (
@@ -6,7 +6,6 @@ function Header() {
       <header>
         <h1>Notes</h1>
         <button>Create</button>
-        
       </header>
     </>
   );

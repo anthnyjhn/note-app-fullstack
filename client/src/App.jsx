@@ -1,5 +1,6 @@
 import {BrowserRouter, Route, Routes} from 'react-router-dom'
 import Home from './pages/Home'
+import Create from './pages/Create'
 
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route exact path='/' element={<Home/>}/>
+        <Route exact path='/create' element={<Create/>}/>
       </Routes>
     </BrowserRouter>
   )
