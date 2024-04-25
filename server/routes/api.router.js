@@ -42,16 +42,32 @@ router.get("/view/:note_id", (req, res) => {
 router.post("/create", (req, res) => {
   const data = req.body;
 
+  const getDate = () => {
+    const currentDateAndTime = new Date();
+
+    // Get the current date
+    const year = currentDateAndTime.getFullYear();
+    const month = String(currentDateAndTime.getMonth() + 1).padStart(2, "0");
+    const day = String(currentDateAndTime.getDate()).padStart(2, "0");
+
+    // Get the current time
+    const hours = String(currentDateAndTime.getHours()).padStart(2, "0");
+    const minutes = String(currentDateAndTime.getMinutes()).padStart(2, "0");
+    const seconds = String(currentDateAndTime.getSeconds()).padStart(2, "0");
+
+    // Combine date and time components into the desired format
+    const formattedDateTime = `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;
+    return formattedDateTime;
+  };
+
   databasePool.getConnection((err, connection) => {
     if (err) throw err;
-
+    const NewNoteID = uuid.v4();
     const sql_query = `INSERT INTO notes (note_id, note_title, note, note_updated)
-    VALUES('${uuid.v4()}','${data._noteTitle}' ,'${
-      data._noteContent
-    }', '2024-04-20 05:46:55');`;
+    VALUES('${NewNoteID}','${data._noteTitle}' ,'${data._noteContent}', '${getDate}');`;
 
     connection.query(sql_query, (err, queryResult) => {
-      res.json(queryResult);
+      res.send(NewNoteID);
 
       connection.release();
       if (err) throw err;
