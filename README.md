@@ -1,20 +1,17 @@
-How to Create a Server
+How to run Server
     Run these terminal commands
         > cd server
         > npm init -y
         > npm i express
         > npm i ejs
         > npm i nodemon
-    Edit the server's package.json and add this in "scripts" ("dev": "nodemon server.js")
+        > npm run dev
 
-How to Create a Client
+How to run Client
     Run these terminal commands
         > cd client
         > npm create vite@latest
-        > npm i
+        > npm I
+        > npm run dev
 
-FAQ
-    1. there is no node_modules
-        a. run this command: "npm i" in the same folder as the package.json
-    2. How to change api port in frontend
-        a. Open vite.config.js in client folder and change the port in server
+Note: .sql file is in this repo. run it in your MySQL workbench lol;
