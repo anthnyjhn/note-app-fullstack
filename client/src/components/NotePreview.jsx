@@ -3,8 +3,7 @@ import "../assets/styles/notepreview.css";
 
 function NotePreview(props) {
   const notePreviewAction = (e) => {
-    // window.location.href = "https://www.youtube.com/watch?v=mDGuie8s8eg";
-    // redirect to http://localhost:5173/view/:noteid
+    window.location.href = `http://localhost:5173/view/${props.notePreviewData.note_id}`;
   };
 
   return (

@@ -28,7 +28,7 @@ const View = () => {
       <div className="container">
         <div className="input-container">
           <h1 placeholder="Title" className="title-input" id="title-input">
-            {noteData.note}
+            {noteData.note_title }
           </h1>
           <p
             id="content-input"
@@ -36,7 +36,7 @@ const View = () => {
             className="content-input"
             readOnly
           >
-            {noteData.note_title}
+            {noteData.note}
           </p>
         </div>
       </div>

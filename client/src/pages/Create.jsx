@@ -24,12 +24,14 @@ function Create() {
     try {
       await Axios.post("http://localhost:3000/api/create", _data).then(
         (res) => {
-          console.log(res.data);
+          window.location.href = `http://localhost:5173/view/${res.data}`;
         }
       );
     } catch (err) {
       if (err) throw err;
     }
+
+    window.URL.hre;
   };
 
   return (
