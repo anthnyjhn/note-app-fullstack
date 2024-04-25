@@ -2,20 +2,30 @@
   background-color: white;
   border-radius: 1rem;
   padding: 0.5rem 1rem;
-  margin-bottom: 0.5rem; 
+  margin-bottom: 0.5rem;
+  height: 80px;
 }
 
 .noteTitle {
+  display: flex;
+  justify-content: left;
   font-weight: 800;
   font-size: large;
   margin: 0px;
+  width: 100%;
+  text-align: left;
 
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .noteContentPreview {
   color: #878688;
   font-weight: 500;
   margin: 0px;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-
-

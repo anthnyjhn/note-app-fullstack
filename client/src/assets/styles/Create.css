@@ -18,7 +18,7 @@ textarea {
 
 textarea {
   width: 90%;
-  height: 80vh;
+  height: 50vh;
   font-size: medium;
 }
 
@@ -26,4 +26,10 @@ form {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+button {
+  background-color: black;
+  color: white;
+  margin: 1rem;
 }

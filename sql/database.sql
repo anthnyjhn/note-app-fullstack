@@ -13,14 +13,15 @@ CREATE TABLE notes (
 
 
 ALTER TABLE notes
-		MODIFY COLUMN note_created DATETIME DEFAULT current_timestamp() NOT NULL,
-       MODIFY COLUMN note_updated DATETIME DEFAULT current_timestamp() NOT NULL;
+		ADD COLUMN note_title varchar(600);
 	
 
+
 -- Insert Note
-INSERT INTO notes (note_id, note, note_updated)
-	VALUES('1', 'test', '2024-04-20 05:46:55');
+INSERT INTO notes (note_id, note_title, note, note_updated)
+	VALUES('1','note-title' ,'test', '2024-04-20 05:46:55');
     
 -- Update Note
 
 -- Delete Note
+DELETE FROM notes;
