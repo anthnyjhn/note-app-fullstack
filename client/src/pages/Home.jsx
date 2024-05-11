@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Axios from "axios";
 
 // Components
-import Header from "../components/Header";
+import Header from "../components/header";
 import NotePreview from "../components/NotePreview";
 
 import "../assets/styles/home.css";
